@@ -3,7 +3,6 @@ package csc519.itu.edu.csc519_hw4_92537;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ActionProvider;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.ShareActionProvider;
 import android.util.Log;
@@ -14,7 +13,7 @@ import android.widget.TextView;
 
 public class DetailActivity extends Activity {
 
-    private ActionProvider shareActionProvider;
+    private ShareActionProvider shareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
