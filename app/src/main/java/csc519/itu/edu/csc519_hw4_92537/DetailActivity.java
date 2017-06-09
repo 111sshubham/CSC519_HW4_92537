@@ -38,7 +38,7 @@ public class DetailActivity extends Activity {
         MenuItem item = menu.findItem(R.id.menu_item_share);
 
         // Fetch and store ShareActionProvider
-        shareActionProvider = (ShareActionProvider) item.getActionProvider();
+        shareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(item);
 
         setShareIntent(createShareIntent());
 
@@ -57,9 +57,9 @@ public class DetailActivity extends Activity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_SUBJECT, "SUBJECT");
-        intent.putExtra(Intent.EXTRA_TEXT,"Extra Text");
         return intent;
     }
+
 
 }
 
